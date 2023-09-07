@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-/*
- * mian function description
- * print a statement using puts function and retuns 0
-*/
+/**
+ * main - Entry point
+ * print a statement using puts() function
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
