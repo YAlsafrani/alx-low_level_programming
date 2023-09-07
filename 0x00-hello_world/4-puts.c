@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/*function description
+/*
+ * mian function description
  * print a statement using puts function and retuns 0
 */
 
