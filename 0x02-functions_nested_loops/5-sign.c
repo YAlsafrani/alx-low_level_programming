@@ -4,7 +4,7 @@
  * print_sign - Prints the sign of a number
  * @n: The number to check.
  *
- * Return: 1 and prints + if positive, 0 and prints 0 if zero, 
+ * Return: 1 and prints + if positive, 0 and prints 0 if zero,
  * -1 and prints - if negativ
 */
 
