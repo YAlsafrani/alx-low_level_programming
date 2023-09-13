@@ -14,7 +14,7 @@ int main(void)
 		if (nextTerm % 2 == 0)
 			sum += nextTerm;
 		t1 = t2;
-	       	t2 = nextTerm;
+		t2 = nextTerm;
 		nextTerm = t1 + t2;
 	}
 	printf("%ld\n", sum);
