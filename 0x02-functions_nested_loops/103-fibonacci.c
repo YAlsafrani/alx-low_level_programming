@@ -1,24 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Prints the first 50 Fibonacci numbers,
- *        starting with 1 and 2, followed by a new line.
+ * main - Print the sum of even Fibonacci numbers less than 4 million.
  * Return: Always 0.
  */
 int main(void)
 {
-	long int i, t1 = 1, t2 = 2, nextTerm;
+	long int t1 = 1, t2 = 2, nextTerm = t1 + t2;
+	long int sum = t2;
 
-	printf("%ld, %ld", t1, t2);
-
-	for (i = 3; i <= 50; i++)
+	while (nextTerm < 4000000)
 	{
-		nextTerm = t1 + t2;
-		printf(", %ld", nextTerm);
+		if (nextTerm % 2 == 0)
+			sum += nextTerm;
 		t1 = t2;
-		t2 = nextTerm;
+	       	t2 = nextTerm;
+		nextTerm = t1 + t2;
 	}
-	printf("\n");
+	printf("%ld\n", sum);
 
 	return (0);
 }
