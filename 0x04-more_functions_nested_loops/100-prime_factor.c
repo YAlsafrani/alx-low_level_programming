@@ -16,7 +16,7 @@ int main(void)
 	while (number % 2 == 0)
 	{
 		largest_prime = 2;
-        number /= 2;
+		number /= 2;
 	}
 
 	for (i = 3; i <= sqrt(number); i += 2)
