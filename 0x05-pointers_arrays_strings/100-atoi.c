@@ -7,23 +7,24 @@
  * Return: The converted integer.
  */
 int _atoi(char *s)
-{
-	int result = 0;
-	int sign = 1;
-	int i = 0;
+{ 
+	int c = 0, min = 1, isi = 0;
+	unsigned int ni = 0;
 
-	while (s[i] == '-' || s[i] == '+')
+	while (s[c])
 	{
-		if (s[i] == '-')
-			sign *= -1;
-		i++;
-	}
+		if (s[c] == '-')
+			min *= -1;
 
-	while (s[i] >= '0' && s[i] <= '9')
-	{
-		result = result * 10 + (s[i] - '0');
-		i++;
-	}
+		while (s[c] >= '0' && s[c] <= '9')
+		{
+			isi = 1;
+			ni = (ni * 10) + (s[c] - '0');
+			c++;
+		}
 
-	return (result * sign);
+		if (isi == 1)
+			break;
+		ni *= min;
+		return (ni);
 }
