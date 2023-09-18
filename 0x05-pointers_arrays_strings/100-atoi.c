@@ -25,6 +25,7 @@ int _atoi(char *s)
 
 		if (isi == 1)
 			break;
-		ni *= min;
-		return (ni);
+	}
+	ni *= min;
+	return (ni);
 }
