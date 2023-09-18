@@ -18,12 +18,13 @@ void print_rev(char *s)
 		s++;
 	}
 
-	while (*s1 != '\0')
+	s--;
+
+	while (s1 <= s)
 	{
 		putchar(*s);
-		
+
 		s--;
-		s1++;
 	}
 
 	putchar('\n');
