@@ -18,7 +18,7 @@ char *leet(char *str)
 		{
 			if (n[i] == leet_table[j])
 			{
-				n[i] = leet_replacement[j];
+				n[i] = leet_replacements[j];
 			}
 		}
 	}
