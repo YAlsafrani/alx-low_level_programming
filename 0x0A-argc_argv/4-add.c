@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - Entry point.
+ * @argc: argument.
+ * @argv: argument.
+ * Return: always 0.
+ */
+
 int main(int argc, char *argv[])
 {
 	int sum;
