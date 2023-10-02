@@ -3,21 +3,19 @@
 #include <string.h>
 
 /**
- * main - Entry point.
- * @argc: argument.
- * @argv: argument.
- * Return: always 0.
- */
-
+  * main - Prints the sum of args positive numbers
+  * @argc: argument count
+  * @argv: argument vector
+  *
+  * Return: Always zero
+  */
 int main(int argc, char *argv[])
 {
 	int i;
-	unsigned int k, sum;
+	unsigned int k, sum = 0;
 	char *c;
 
-	sum = 0;
-
-	if  (argc > 1)
+	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
@@ -25,8 +23,11 @@ int main(int argc, char *argv[])
 
 			for (k = 0; k < strlen(c); k++)
 			{
-				printf("Error\n");
-				return (1);
+				if (c[k] < 48 || c[k] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 
 			sum += atoi(c);
